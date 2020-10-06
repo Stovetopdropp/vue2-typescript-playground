@@ -2,6 +2,7 @@
     <ValidationObserver v-slot="{ handleSubmit }">
         <form @submit.prevent="handleSubmit(debouncedSubmit)">
             <slot></slot>
+            <br />
             <div :class="buttonContainerClass">
                 <button
                     type="submit"

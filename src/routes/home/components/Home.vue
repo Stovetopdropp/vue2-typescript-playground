@@ -5,39 +5,24 @@
             text: 'Submit'
         }"
     >
-        <ValidationProvider
-            name="fullName"
-            rules="required"
-            v-slot="{ errors }"
-        >
-            <input type="text" v-model="fullName" />
-            <span>{{ errors[0] }}</span>
-        </ValidationProvider>
-        <!-- <BaseInput
-            name="name"
-            type="text"
-            label="Full Name"
-            placeholder="Your Name"
-            success-message="Wow good job entering your name bud!!"
-        /> -->
+        <BaseInput name="fullName" labelText="Full Name" rules="required" />
+        <BaseInput name="email" labelText="Email" rules="required|email" />
     </BaseForm>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import { ValidationProvider } from "vee-validate";
 
 import BaseForm from "@modules/core/components/ui/form-elements/BaseForm.vue";
+import BaseInput from "@modules/core/components/ui/form-elements/BaseInput.vue";
 
 @Component({
     components: {
         BaseForm,
-        ValidationProvider
+        BaseInput
     },
     data() {
-        return {
-            fullName: ""
-        };
+        return {};
     },
     methods: {
         async onSubmit() {
