@@ -1,0 +1,40 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"*.sublime-workspace",
+				".coverage",
+				"package-lock.json",
+				"*.bundle.js",
+				"*.bundle.js.map"
+			],
+			"folder_exclude_patterns":
+			[
+				".svn",
+				".git",
+				".hg",
+				"CVS",
+				"dist",
+				"node_modules",
+				"bower_components",
+				".tmp",
+				".babel",
+				"js-coverage",
+				"coverage",
+				"tmp",
+			],
+			"name": "Vue2 Typescript",
+			"path": "."
+		}
+	],
+	"settings":
+	{
+		"detect_indentation": false,
+		"ensure_newline_at_eof_on_save": true,
+		"tab_size": 4,
+		"translate_tabs_to_spaces": true,
+		"trim_trailing_white_space_on_save": true
+	}
+}
