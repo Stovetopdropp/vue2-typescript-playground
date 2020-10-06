@@ -17,9 +17,14 @@
       "jest"
     ],
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@config/*": ["config/*"],
+      "@images/*": ["src/images/*"],
+      "@modules/*": ["src/modules/*"],
+      "@routes/*": ["src/routes/*"],
+      "@server/*": ["src/server/*"],
+      "@scss/*": ["src/scss/*"],
+      "@static/*": ["static/*"],
+      "@tests/*": ["tests/*"]
     },
     "lib": [
       "esnext",
